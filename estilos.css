@@ -219,6 +219,13 @@ section p{
 
 /*cuadros*/
 
+.producto img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 .tarjetas{
 
     display:flex;
@@ -232,10 +239,36 @@ section p{
     margin-top:50px;
 }
 
+.contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: nowrap;
+    margin-top: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contacto .card {
+    width: 30%;
+    max-width: 280px;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.contacto .card p {
+    font-size: 16px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
 .card{
 
     background:#1b1b1b;
 
+    display: inline-flexbox;
     width:300px;
 
     padding:30px;
@@ -261,9 +294,61 @@ section p{
     font-size:28px;
 }
 
-.card p{
+/* FORMULARIO */
 
-    font-size:18px;
+.formulario {
+    width: 500px;
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    background: #1b1b1b;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.formulario label {
+    display: block;
+    color: #0080ff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 2px solid #0080ff;
+    border-radius: 8px;
+    background: #303030;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.formulario textarea {
+    resize: vertical;
+}
+
+.formulario button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    background: #1333c0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background: #0080ff;
 }
 
 /*pie de la pagina*/
@@ -279,4 +364,8 @@ footer{
     padding:30px;
 
     margin-top:50px;
+}
+
+h3{
+    color: #0080ff;
 }
